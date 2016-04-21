@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (3.3.1)
+  - PKHUD (3.1.0)
+  - Reachability (3.2)
+  - SnapKit (0.20.0)
+  - SQLite.swift (0.10.1)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - PKHUD
+  - Reachability
+  - SnapKit
+  - SQLite.swift
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  PKHUD: 4167eccdb1b3a892fd80ce2b51cb6ba412a889ab
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
+  SQLite.swift: 6a6e4b034efc317ce4e203b6af2d3024fee2b570
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+COCOAPODS: 0.39.0
