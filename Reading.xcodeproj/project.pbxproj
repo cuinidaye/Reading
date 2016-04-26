@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		46E29EB5EB04AEA7CFC74392 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BD6C9A77C3488B41C93814 /* Pods.framework */; };
+		AA8FFDAD1CCA23BC00AE1936 /* CFCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FFDAC1CCA23BC00AE1936 /* CFCTabBarController.swift */; };
+		AA8FFDF31CCE317000AE1936 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FFDF21CCE317000AE1936 /* UIColor+Extension.swift */; };
 		AAA5BD2D1CC9FF0A004A296C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5BD2C1CC9FF0A004A296C /* BaseViewController.swift */; };
 		AAA5BD2F1CC9FF2E004A296C /* BookShelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5BD2E1CC9FF2E004A296C /* BookShelfViewController.swift */; };
 		AAA5BD311CCA15D7004A296C /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5BD301CCA15D7004A296C /* ChoiceViewController.swift */; };
@@ -20,6 +22,7 @@
 		AAD0F6B31CC8ADA0007F7973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD0F6B11CC8ADA0007F7973 /* LaunchScreen.storyboard */; };
 		AAD0F6BE1CC8ADA0007F7973 /* ReadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0F6BD1CC8ADA0007F7973 /* ReadingTests.swift */; };
 		AAD0F6C91CC8ADA0007F7973 /* ReadingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0F6C81CC8ADA0007F7973 /* ReadingUITests.swift */; };
+		AAF1F1C51CCF0E8F00BD6A48 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF1F1C41CCF0E8F00BD6A48 /* UIImage+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,8 @@
 /* Begin PBXFileReference section */
 		20BD6C9A77C3488B41C93814 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		664F9D3F6693780FE813E624 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AA8FFDAC1CCA23BC00AE1936 /* CFCTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CFCTabBarController.swift; path = Reading/ViewControllers/Base/CFCTabBarController.swift; sourceTree = "<group>"; };
+		AA8FFDF21CCE317000AE1936 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "Reading/Utils/Color/UIColor+Extension.swift"; sourceTree = "<group>"; };
 		AAA5BD2C1CC9FF0A004A296C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Reading/ViewControllers/Base/BaseViewController.swift; sourceTree = "<group>"; };
 		AAA5BD2E1CC9FF2E004A296C /* BookShelfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookShelfViewController.swift; path = Reading/ViewControllers/BookShelf/BookShelfViewController.swift; sourceTree = "<group>"; };
 		AAA5BD301CCA15D7004A296C /* ChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChoiceViewController.swift; path = Reading/ViewControllers/Choice/ChoiceViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 		AAD0F6C41CC8ADA0007F7973 /* ReadingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD0F6C81CC8ADA0007F7973 /* ReadingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingUITests.swift; sourceTree = "<group>"; };
 		AAD0F6CA1CC8ADA0007F7973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF1F1C41CCF0E8F00BD6A48 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "Reading/Utils/Image/UIImage+Extension.swift"; sourceTree = "<group>"; };
 		C3C04CF3E946B6184705EE84 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				AAA5BD2C1CC9FF0A004A296C /* BaseViewController.swift */,
+				AA8FFDAC1CCA23BC00AE1936 /* CFCTabBarController.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -187,6 +194,23 @@
 			name = Read;
 			sourceTree = "<group>";
 		};
+		AA8FFDAE1CCA3BA500AE1936 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AAF1F1C31CCF0E6100BD6A48 /* Image */,
+				AA8FFDAF1CCA3BB200AE1936 /* Color */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		AA8FFDAF1CCA3BB200AE1936 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				AA8FFDF21CCE317000AE1936 /* UIColor+Extension.swift */,
+			);
+			name = Color;
+			sourceTree = "<group>";
+		};
 		AAD0F69C1CC8ADA0007F7973 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +240,7 @@
 				AA2A69661CC9C55C00DE27C1 /* Views */,
 				AA2A69671CC9C56900DE27C1 /* Models */,
 				AA2A69681CC9C57F00DE27C1 /* Vendors */,
+				AA8FFDAE1CCA3BA500AE1936 /* Utils */,
 				AAD0F6A81CC8ADA0007F7973 /* AppDelegate.swift */,
 				AAD0F6AA1CC8ADA0007F7973 /* ViewController.swift */,
 				AAD0F6AC1CC8ADA0007F7973 /* Main.storyboard */,
@@ -242,6 +267,14 @@
 				AAD0F6CA1CC8ADA0007F7973 /* Info.plist */,
 			);
 			path = ReadingUITests;
+			sourceTree = "<group>";
+		};
+		AAF1F1C31CCF0E6100BD6A48 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				AAF1F1C41CCF0E8F00BD6A48 /* UIImage+Extension.swift */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,11 +462,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA8FFDAD1CCA23BC00AE1936 /* CFCTabBarController.swift in Sources */,
 				AAA5BD2F1CC9FF2E004A296C /* BookShelfViewController.swift in Sources */,
 				AAD0F6AB1CC8ADA0007F7973 /* ViewController.swift in Sources */,
+				AA8FFDF31CCE317000AE1936 /* UIColor+Extension.swift in Sources */,
 				AAA5BD311CCA15D7004A296C /* ChoiceViewController.swift in Sources */,
 				AAA5BD351CCA167A004A296C /* UserCenterViewController.swift in Sources */,
 				AAD0F6A91CC8ADA0007F7973 /* AppDelegate.swift in Sources */,
+				AAF1F1C51CCF0E8F00BD6A48 /* UIImage+Extension.swift in Sources */,
 				AAA5BD331CCA1606004A296C /* CategoryViewController.swift in Sources */,
 				AAA5BD2D1CC9FF0A004A296C /* BaseViewController.swift in Sources */,
 			);

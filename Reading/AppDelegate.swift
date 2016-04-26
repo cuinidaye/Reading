@@ -15,10 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        let vc: ViewController = ViewController()
-        let nc: UINavigationController = UINavigationController(rootViewController: vc)
-        window?.rootViewController = nc
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.rootViewController = CFCTabBarController()
         window?.makeKeyAndVisible()
+        configAppearance()
         return true
     }
 
@@ -42,6 +42,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       
     }
 
+    /*
+    UINavigationBar *appearance = [UINavigationBar appearance];
+    appearance.tintColor = [UIColor whiteColor];
+    appearance.titleTextAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, [UIFont systemFontOfSize:18], NSFontAttributeName, nil];
+    [appearance setBackgroundImage:[UIImage imageWithColor:[UIColor colorWithHexValue:@"f4303d"]]
+    forBarPosition:UIBarPositionAny
+    barMetrics:UIBarMetricsDefault];
+    [appearance setShadowImage:[[UIImage alloc] init]];
+    
+    UITabBar *tabbarAppearance = [UITabBar appearance];
+    tabbarAppearance.shadowImage = [UIImage imageWithColor:[UIColor colorWithHexValue:@"e1e1e1"]];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    //全局游标
+    [[UITextField appearance] setTintColor:[UIColor colorWithHexValue:@"f4303d"]];
+    [[UITextView appearance] setTintColor:[UIColor colorWithHexValue:@"f4303d"]];*/
 
+    private func configAppearance() {
+        UINavigationBar.appearance().barTintColor = UIColor.colorWithHexValue("f4303d");
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+    }
 }
 
