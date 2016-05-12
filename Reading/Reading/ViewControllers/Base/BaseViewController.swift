@@ -9,23 +9,19 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.translucent = false
-        self.view.backgroundColor = UIColor.lightGrayColor()
+        self.automaticallyAdjustsScrollViewInsets = false
+        self.view.backgroundColor = UIColor.colorWithHexValue("f9f9f9")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
     }
-    
-//    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-//        return UIStatusBarStyle.LightContent;
-//    }
 }
