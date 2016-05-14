@@ -54,11 +54,6 @@ class CategoryViewController: BaseViewController {
     //MARK: Selector Methods
     @objc private func rightItemClicked(sender: AnyObject?) {
         print("test")
-//        UIView.animateWithDuration(3.0, animations: { () in
-//            
-//            }, completion: { (isFinished) in
-//            
-//        })
     }
     
     //MARK: Private Methods 

@@ -21,6 +21,6 @@ struct Constants {
     }
     
     struct Web {
-        static let Category: String = "http://rd.xs.cn/1210?sr=2"
+        static let Category: String = "http://rd.xs.cn/1210?sr=2"//分类页面
     }
 }
