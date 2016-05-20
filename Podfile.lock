@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (3.3.1)
+  - HanekeSwift (0.10.1)
   - PKHUD (3.1.0)
   - Reachability (3.2)
   - SnapKit (0.20.0)
@@ -8,6 +9,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - HanekeSwift
   - PKHUD
   - Reachability
   - SnapKit
@@ -16,6 +18,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
   PKHUD: 4167eccdb1b3a892fd80ce2b51cb6ba412a889ab
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650

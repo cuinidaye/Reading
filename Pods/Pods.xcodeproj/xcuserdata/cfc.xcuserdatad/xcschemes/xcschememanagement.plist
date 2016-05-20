@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HanekeSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>PKHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,12 +47,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0D04BF44698513DC2915DA659F416C80</key>
+		<key>3159D7E18F8BF45174544404BECA461F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1735D720ADE3FD5875CEF0F3ADBE0ACE</key>
+		<key>5A45D3E543E7056D51AE6BFB28789AC2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,22 +62,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>933B3A06CE45A73698D50219F63EBCE4</key>
+		<key>7DDF79495F24B309AF089ACC99FC1151</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A80B78F437E4D55B6158BB247DFD84C4</key>
+		<key>C3DD88C363B64F8461F9043EB0240167</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BE079EF0BE4573060B2E2334A5E3209B</key>
+		<key>E2543357FE84BD5ADBBF7737883E1C3E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>F6F0516F82D07656D12F1C0716898F73</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F76007A19572FCCD2F56FE84F97DD113</key>
 		<dict>
 			<key>primary</key>
 			<true/>
