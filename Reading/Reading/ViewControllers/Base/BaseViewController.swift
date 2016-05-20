@@ -14,7 +14,7 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.navigationBar.translucent = false
         self.automaticallyAdjustsScrollViewInsets = false
-        self.view.backgroundColor = UIColor.colorWithHexValue("f9f9f9")
+        self.view.backgroundColor = Constants.Color.BaseColor
     }
 
     override func didReceiveMemoryWarning() {

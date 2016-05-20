@@ -14,6 +14,13 @@ struct Constants {
     struct View {
         static let ScreenWidth: CGFloat = UIScreen.mainScreen().bounds.size.width
         static let ScreenHeight: CGFloat = UIScreen.mainScreen().bounds.size.height
+        
+        static let ScreenRatio: CGFloat = View.ScreenWidth / 375.0
+    }
+    
+    struct Color {
+        static let MainColor: UIColor = UIColor.colorWithHexValue("f4303d")
+        static let BaseColor: UIColor = UIColor.colorWithHexValue("f9f9f9")
     }
     
     struct NotificationKey {

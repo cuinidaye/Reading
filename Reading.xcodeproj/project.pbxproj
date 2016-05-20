@@ -26,6 +26,8 @@
 		AAD0F6BE1CC8ADA0007F7973 /* ReadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0F6BD1CC8ADA0007F7973 /* ReadingTests.swift */; };
 		AAD0F6C91CC8ADA0007F7973 /* ReadingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0F6C81CC8ADA0007F7973 /* ReadingUITests.swift */; };
 		AAF1F1C51CCF0E8F00BD6A48 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF1F1C41CCF0E8F00BD6A48 /* UIImage+Extension.swift */; };
+		AAFBA7991CEEB1EE00B72FD0 /* ChoiceSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFBA7981CEEB1EE00B72FD0 /* ChoiceSwitchView.swift */; };
+		AAFBA7A01CEEB93200B72FD0 /* ChangeNicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFBA79F1CEEB93200B72FD0 /* ChangeNicknameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		AAD0F6C81CC8ADA0007F7973 /* ReadingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingUITests.swift; sourceTree = "<group>"; };
 		AAD0F6CA1CC8ADA0007F7973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAF1F1C41CCF0E8F00BD6A48 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "Reading/Utils/Image/UIImage+Extension.swift"; sourceTree = "<group>"; };
+		AAFBA7981CEEB1EE00B72FD0 /* ChoiceSwitchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChoiceSwitchView.swift; path = Reading/Views/Choice/ChoiceSwitchView.swift; sourceTree = "<group>"; };
+		AAFBA79F1CEEB93200B72FD0 /* ChangeNicknameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangeNicknameViewController.swift; path = Reading/ViewControllers/UserCenter/ChangeNicknameViewController.swift; sourceTree = "<group>"; };
 		C3C04CF3E946B6184705EE84 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,7 +198,11 @@
 		AA2A696D1CC9C5CA00DE27C1 /* UserCenter */ = {
 			isa = PBXGroup;
 			children = (
-				AAA5BD341CCA167A004A296C /* UserCenterViewController.swift */,
+				AAFBA79A1CEEB87A00B72FD0 /* UserCenter */,
+				AAFBA79B1CEEB8B200B72FD0 /* Account */,
+				AAFBA79C1CEEB8BB00B72FD0 /* UserProfile */,
+				AAFBA79D1CEEB8C500B72FD0 /* PayCenter */,
+				AAFBA79E1CEEB8CC00B72FD0 /* Settings */,
 			);
 			name = UserCenter;
 			sourceTree = "<group>";
@@ -249,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				AAB485731CE398F500188144 /* CFCWebView.swift */,
+				AAFBA7981CEEB1EE00B72FD0 /* ChoiceSwitchView.swift */,
 			);
 			name = Choice;
 			sourceTree = "<group>";
@@ -348,6 +357,43 @@
 				AAF1F1C41CCF0E8F00BD6A48 /* UIImage+Extension.swift */,
 			);
 			name = Image;
+			sourceTree = "<group>";
+		};
+		AAFBA79A1CEEB87A00B72FD0 /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				AAA5BD341CCA167A004A296C /* UserCenterViewController.swift */,
+			);
+			name = UserCenter;
+			sourceTree = "<group>";
+		};
+		AAFBA79B1CEEB8B200B72FD0 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		AAFBA79C1CEEB8BB00B72FD0 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				AAFBA79F1CEEB93200B72FD0 /* ChangeNicknameViewController.swift */,
+			);
+			name = UserProfile;
+			sourceTree = "<group>";
+		};
+		AAFBA79D1CEEB8C500B72FD0 /* PayCenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PayCenter;
+			sourceTree = "<group>";
+		};
+		AAFBA79E1CEEB8CC00B72FD0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -545,9 +591,11 @@
 				AAB4857A1CE421C800188144 /* Constants.swift in Sources */,
 				AAB485721CE398C300188144 /* HintView.swift in Sources */,
 				AAB485741CE398F500188144 /* CFCWebView.swift in Sources */,
+				AAFBA7A01CEEB93200B72FD0 /* ChangeNicknameViewController.swift in Sources */,
 				AAF1F1C51CCF0E8F00BD6A48 /* UIImage+Extension.swift in Sources */,
 				AAA5BD331CCA1606004A296C /* CategoryViewController.swift in Sources */,
 				AAA5BD2D1CC9FF0A004A296C /* BaseViewController.swift in Sources */,
+				AAFBA7991CEEB1EE00B72FD0 /* ChoiceSwitchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

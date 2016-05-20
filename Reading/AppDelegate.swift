@@ -44,12 +44,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     //配置全局外观属性
     private func configGlobalAppearance() {
-        UINavigationBar.appearance().barTintColor = UIColor.colorWithHexValue("f4303d");
+        UINavigationBar.appearance().barTintColor = Constants.Color.MainColor
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor(), NSFontAttributeName : UIFont.systemFontOfSize(18)]
         
-        UITextView.appearance().tintColor = UIColor.colorWithHexValue("f4303d")
-        UITextField.appearance().tintColor = UIColor.colorWithHexValue("f4303d")
+        UITextView.appearance().tintColor = Constants.Color.MainColor
+        UITextField.appearance().tintColor = Constants.Color.MainColor
     }
 }
 
