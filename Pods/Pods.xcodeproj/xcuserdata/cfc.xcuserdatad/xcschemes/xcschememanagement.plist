@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>R.swift.Library.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Reachability.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,12 +52,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3159D7E18F8BF45174544404BECA461F</key>
+		<key>18C311C4CB9E32AA0D678B1F0FCE7413</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5A45D3E543E7056D51AE6BFB28789AC2</key>
+		<key>3847D708170EDD5E3F9DBD9FC0866023</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -67,22 +72,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C3DD88C363B64F8461F9043EB0240167</key>
+		<key>83FC239DF76EE81257BB5D686A4F3416</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E2543357FE84BD5ADBBF7737883E1C3E</key>
+		<key>8936148E49573D837F66B13185A16FE8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8C17276194F31399E8B37A75843AAEC2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A6F9B3B8C4869D4B7CACDB4E2B935E2A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>F6F0516F82D07656D12F1C0716898F73</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F76007A19572FCCD2F56FE84F97DD113</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -13,12 +13,13 @@ class ChoiceViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "书城"
+        self.view.backgroundColor = UIColor.cyanColor()
         
-        let hint = HintView(frame: CGRectMake(0, 0, Constants.View.ScreenWidth, Constants.View.ScreenHeight - 64 - 49))
-        hint.addTappedAction { () in
-            print("closure called")
-        }
-        self.view.addSubview(hint)
+//        let hint = HintView(frame: CGRectMake(0, 0, Constants.View.ScreenWidth, Constants.View.ScreenHeight - 64 - 49))
+//        hint.addTappedAction { () in
+//            print("closure called")
+//        }
+//        self.view.addSubview(hint)
     }
 
     override func didReceiveMemoryWarning() {

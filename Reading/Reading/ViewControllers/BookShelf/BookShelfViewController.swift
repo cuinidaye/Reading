@@ -13,7 +13,7 @@ class BookShelfViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "书架"
-        
+        self.view.backgroundColor = UIColor.orangeColor()
     }
 
     override func didReceiveMemoryWarning() {

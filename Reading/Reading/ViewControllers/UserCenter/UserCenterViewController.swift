@@ -7,21 +7,98 @@
 //
 
 import UIKit
+import SnapKit
 
 class UserCenterViewController: BaseViewController {
-
+    
+    private var mRechargeView: UserCenterItemView!
+    private var mVipView: UserCenterItemView!
+    private var mConsumeView: UserCenterItemView!
+    private var mSettignsView: UserCenterItemView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "我的"
-        
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "修改昵称", style: .Plain, target: self, action: #selector(rightItemClicked))
+        self.navigationItem.title = "个人中心"
+        self.setupViews()
     }
     
-    func rightItemClicked(sender: AnyObject) {
-        self.navigationController?.pushViewController(ChangeNicknameViewController(), animated: true)
+    private func setupViews() {
+        let scrollView = UIScrollView(frame: self.view.bounds)
+        scrollView.contentSize = CGSizeMake(self.view.bounds.width, self.view.bounds.height + 1)
+        self.view.addSubview(scrollView)
+        
+        let contentView = UIView(frame: CGRectMake(0, 0, self.view.bounds.width, self.view.bounds.height + 1))
+        scrollView.addSubview(contentView)
+        
+        mRechargeView = UserCenterItemView(iconImage: UIImage(named: "usercenter_recharge_n")!, title: "充值", contentText: "0 阅币")
+        mRechargeView.addTarget(self, action: #selector(rechargeViewClicked))
+        contentView.addSubview(mRechargeView)
+        mRechargeView.snp_makeConstraints { (make) in
+            make.top.equalTo(contentView).offset(20)
+            make.left.equalTo(contentView)
+            make.right.equalTo(contentView)
+            make.height.equalTo(Constants.View.UserCenterItemHeight)
+        }
+        
+        mVipView = UserCenterItemView(iconImage: UIImage(named: "usercenter_member_n")!, title: "会员", contentText: "未开通")
+        mVipView.addTarget(self, action: #selector(vipViewClicked))
+        contentView.addSubview(mVipView)
+        mVipView.snp_makeConstraints { (make) in
+            make.top.equalTo(mRechargeView.snp_bottom).offset(-0.5)
+            make.left.equalTo(contentView)
+            make.right.equalTo(contentView)
+            make.height.equalTo(Constants.View.UserCenterItemHeight)
+        }
+        
+        mConsumeView = UserCenterItemView(iconImage: UIImage(named: "usercenter_consume_n")!, title: "消费记录")
+        mConsumeView.addTarget(self, action: #selector(consumeViewClicked))
+        contentView.addSubview(mConsumeView)
+        mConsumeView.snp_makeConstraints { (make) in
+            make.top.top.equalTo(mVipView.snp_bottom).offset(-0.5)
+            make.left.equalTo(contentView)
+            make.right.equalTo(contentView)
+            make.height.equalTo(Constants.View.UserCenterItemHeight)
+        }
+        
+        let paddingView = UIView()
+        paddingView.backgroundColor = UIColor.whiteColor()
+        contentView.addSubview(paddingView)
+        paddingView.snp_makeConstraints { (make) in
+            make.left.equalTo(contentView)
+            make.width.equalTo(10)
+            make.top.equalTo(mRechargeView).offset(10)
+            make.bottom.equalTo(mConsumeView).offset(-10)
+        }
+        
+        mSettignsView = UserCenterItemView(iconImage: UIImage(named: "usercenter_settings_n")!, title: "设置")
+        mSettignsView.addTarget(self, action: #selector(settingsViewClicked))
+        contentView.addSubview(mSettignsView)
+        mSettignsView.snp_makeConstraints { (make) in
+            make.top.equalTo(mConsumeView.snp_bottom).offset(17)
+            make.left.equalTo(contentView)
+            make.right.equalTo(contentView)
+            make.height.equalTo(Constants.View.UserCenterItemHeight)
+        }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    //MARK:Selector Methods
+    @objc private func rechargeViewClicked(sender: AnyObject) {
+        print("rechargeViewClicked")
+    }
+    
+    @objc private func vipViewClicked(sender: AnyObject) {
+        print("vipViewClicked")
+    }
+    
+    @objc private func consumeViewClicked(sender: AnyObject) {
+        print("consumeViewClicked")
+    }
+    
+    @objc private func settingsViewClicked(sender: AnyObject) {
+        self.navigationController?.pushViewController(SettingsViewController(), animated: true)
     }
 }

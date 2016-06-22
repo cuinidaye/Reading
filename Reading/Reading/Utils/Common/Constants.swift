@@ -6,7 +6,6 @@
 //  Copyright © 2016年 cuifengchuan. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 struct Constants {
@@ -16,6 +15,8 @@ struct Constants {
         static let ScreenHeight: CGFloat = UIScreen.mainScreen().bounds.size.height
         
         static let ScreenRatio: CGFloat = View.ScreenWidth / 375.0
+        
+        static let UserCenterItemHeight: CGFloat = 45
     }
     
     struct Color {

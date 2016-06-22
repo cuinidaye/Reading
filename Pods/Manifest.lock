@@ -2,6 +2,9 @@ PODS:
   - Alamofire (3.3.1)
   - HanekeSwift (0.10.1)
   - PKHUD (3.1.0)
+  - R.swift (2.3.0):
+    - R.swift.Library (~> 2.1.0)
+  - R.swift.Library (2.1.0)
   - Reachability (3.2)
   - SnapKit (0.20.0)
   - SQLite.swift (0.10.1)
@@ -11,6 +14,7 @@ DEPENDENCIES:
   - Alamofire
   - HanekeSwift
   - PKHUD
+  - R.swift
   - Reachability
   - SnapKit
   - SQLite.swift
@@ -20,6 +24,8 @@ SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
   HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
   PKHUD: 4167eccdb1b3a892fd80ce2b51cb6ba412a889ab
+  R.swift: 38b2191a603c3d491a09baddfb4ccc7aa9be4d9d
+  R.swift.Library: e5e077ed04f6867a95676af491650091b23518e9
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
   SQLite.swift: 6a6e4b034efc317ce4e203b6af2d3024fee2b570
