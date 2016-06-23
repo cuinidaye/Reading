@@ -31,7 +31,9 @@ class UserCenterViewController: BaseViewController {
         scrollView.addSubview(contentView)
         
         mRechargeView = UserCenterItemView(iconImage: UIImage(named: "usercenter_recharge_n")!, title: "充值", contentText: "0 阅币")
-        mRechargeView.addTarget(self, action: #selector(rechargeViewClicked))
+        mRechargeView.addClickHandler { 
+            
+        }
         contentView.addSubview(mRechargeView)
         mRechargeView.snp_makeConstraints { (make) in
             make.top.equalTo(contentView).offset(20)
@@ -41,7 +43,9 @@ class UserCenterViewController: BaseViewController {
         }
         
         mVipView = UserCenterItemView(iconImage: UIImage(named: "usercenter_member_n")!, title: "会员", contentText: "未开通")
-        mVipView.addTarget(self, action: #selector(vipViewClicked))
+        mVipView.addClickHandler { 
+            
+        }
         contentView.addSubview(mVipView)
         mVipView.snp_makeConstraints { (make) in
             make.top.equalTo(mRechargeView.snp_bottom).offset(-0.5)
@@ -51,7 +55,9 @@ class UserCenterViewController: BaseViewController {
         }
         
         mConsumeView = UserCenterItemView(iconImage: UIImage(named: "usercenter_consume_n")!, title: "消费记录")
-        mConsumeView.addTarget(self, action: #selector(consumeViewClicked))
+        mConsumeView.addClickHandler { 
+            
+        }
         contentView.addSubview(mConsumeView)
         mConsumeView.snp_makeConstraints { (make) in
             make.top.top.equalTo(mVipView.snp_bottom).offset(-0.5)
@@ -71,7 +77,9 @@ class UserCenterViewController: BaseViewController {
         }
         
         mSettignsView = UserCenterItemView(iconImage: UIImage(named: "usercenter_settings_n")!, title: "设置")
-        mSettignsView.addTarget(self, action: #selector(settingsViewClicked))
+        mSettignsView.addClickHandler {
+            self.navigationController?.pushViewController(SettingsViewController(), animated: true)
+        }
         contentView.addSubview(mSettignsView)
         mSettignsView.snp_makeConstraints { (make) in
             make.top.equalTo(mConsumeView.snp_bottom).offset(17)
@@ -83,22 +91,5 @@ class UserCenterViewController: BaseViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    //MARK:Selector Methods
-    @objc private func rechargeViewClicked(sender: AnyObject) {
-        print("rechargeViewClicked")
-    }
-    
-    @objc private func vipViewClicked(sender: AnyObject) {
-        print("vipViewClicked")
-    }
-    
-    @objc private func consumeViewClicked(sender: AnyObject) {
-        print("consumeViewClicked")
-    }
-    
-    @objc private func settingsViewClicked(sender: AnyObject) {
-        self.navigationController?.pushViewController(SettingsViewController(), animated: true)
     }
 }

@@ -10,17 +10,19 @@ import UIKit
 import SnapKit
 
 class UserCenterItemView: UIView {
+    
+    typealias ClickHandler = () -> Void
 
     private var mIconImageView: UIImageView!
     private var mTitleLabel: UILabel!
     private var mIndicatorImageView: UIImageView!
     private var mContentLabel: UILabel!
+    private var clickHandler: ClickHandler?
     
     convenience init(iconImage: UIImage, title: String) {
         self.init(iconImage: iconImage, title: title, contentText: "")
     }
-        
-
+    
     init(iconImage: UIImage, title: String, contentText: String) {
         super.init(frame: CGRectZero)
         
@@ -61,6 +63,9 @@ class UserCenterItemView: UIView {
             make.centerY.equalTo(self)
             make.right.equalTo(mIndicatorImageView.snp_left).offset(-10)
         }
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(clicked))
+        self.addGestureRecognizer(tap)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -71,8 +76,18 @@ class UserCenterItemView: UIView {
         mContentLabel.text = text
     }
     
+    func addClickHandler(click: ClickHandler) {
+        clickHandler = click
+    }
+    
     func addTarget(target: AnyObject, action: Selector) {
         let tap = UITapGestureRecognizer(target: target, action: action)
         self.addGestureRecognizer(tap)
+    }
+    
+    @objc private func clicked() {
+        if clickHandler != nil {
+            clickHandler!()
+        }
     }
 }
