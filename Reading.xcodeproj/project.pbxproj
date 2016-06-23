@@ -13,6 +13,7 @@
 		AA10A4E41D1A7CF500917038 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10A4E21D1A7CF500917038 /* UIColor+Extension.swift */; };
 		AA10A4E51D1A7CF500917038 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10A4E31D1A7CF500917038 /* UIImage+Extension.swift */; };
 		AA10A4E71D1A7D1800917038 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10A4E61D1A7D1800917038 /* UIView+Extension.swift */; };
+		AA10A4EA1D1B862A00917038 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10A4E91D1B862A00917038 /* R.generated.swift */; };
 		AA8FFDAD1CCA23BC00AE1936 /* CFCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8FFDAC1CCA23BC00AE1936 /* CFCTabBarController.swift */; };
 		AAA5BD2D1CC9FF0A004A296C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5BD2C1CC9FF0A004A296C /* BaseViewController.swift */; };
 		AAA5BD2F1CC9FF2E004A296C /* BookShelfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5BD2E1CC9FF2E004A296C /* BookShelfViewController.swift */; };
@@ -60,6 +61,7 @@
 		AA10A4E21D1A7CF500917038 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "Reading/Utils/Extension/UIColor+Extension.swift"; sourceTree = "<group>"; };
 		AA10A4E31D1A7CF500917038 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "Reading/Utils/Extension/UIImage+Extension.swift"; sourceTree = "<group>"; };
 		AA10A4E61D1A7D1800917038 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "Reading/Utils/Extension/UIView+Extension.swift"; sourceTree = "<group>"; };
+		AA10A4E91D1B862A00917038 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		AA8FFDAC1CCA23BC00AE1936 /* CFCTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CFCTabBarController.swift; path = Reading/ViewControllers/Base/CFCTabBarController.swift; sourceTree = "<group>"; };
 		AAA5BD2C1CC9FF0A004A296C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Reading/ViewControllers/Base/BaseViewController.swift; sourceTree = "<group>"; };
 		AAA5BD2E1CC9FF2E004A296C /* BookShelfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookShelfViewController.swift; path = Reading/ViewControllers/BookShelf/BookShelfViewController.swift; sourceTree = "<group>"; };
@@ -294,6 +296,7 @@
 		AAB485751CE41F9E00188144 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				AA10A4E91D1B862A00917038 /* R.generated.swift */,
 				AAD0F6A81CC8ADA0007F7973 /* AppDelegate.swift */,
 				AAD0F6AA1CC8ADA0007F7973 /* ViewController.swift */,
 				AAD0F6AC1CC8ADA0007F7973 /* Main.storyboard */,
@@ -411,6 +414,7 @@
 			buildConfigurationList = AAD0F6CD1CC8ADA0007F7973 /* Build configuration list for PBXNativeTarget "Reading" */;
 			buildPhases = (
 				500D796B8A6E0E042CB01DC3 /* Check Pods Manifest.lock */,
+				AA10A4E81D1B854100917038 /* ShellScript */,
 				AAD0F6A11CC8ADA0007F7973 /* Sources */,
 				AAD0F6A21CC8ADA0007F7973 /* Frameworks */,
 				AAD0F6A31CC8ADA0007F7973 /* Resources */,
@@ -551,6 +555,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		AA10A4E81D1B854100917038 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
+		};
 		BA88A2594C1A4589F17D9C7E /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -596,6 +613,7 @@
 				AAA5BD351CCA167A004A296C /* UserCenterViewController.swift in Sources */,
 				AAD0F6A91CC8ADA0007F7973 /* AppDelegate.swift in Sources */,
 				AA10A4E01D1A6F1000917038 /* UserCenterAvatarView.swift in Sources */,
+				AA10A4EA1D1B862A00917038 /* R.generated.swift in Sources */,
 				AAB4857A1CE421C800188144 /* Constants.swift in Sources */,
 				AADA99B21D12B0C2007A6237 /* CFCNavigationController.swift in Sources */,
 				AAB485721CE398C300188144 /* HintView.swift in Sources */,
